@@ -10,6 +10,7 @@ class CityService{
             const city = await this.CityRepository.createCity(data);
             return city;
         } catch (error) {
+            console.log("Not able to create a city")
             throw{error};
         }
 
